@@ -1,0 +1,6402 @@
+[
+  {
+    "iteration": 1,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 1,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.31089563505112705
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 2,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6542010311571858
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 3,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6573337781495001
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 4,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5495672673845229
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 5,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7156686177103515
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "G",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 6,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9077538251978434
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 7,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7018129453287342
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 8,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6207659739320981
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 9,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7882767511877875
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 10,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.46906922517348604
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 11,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9095957271597876
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 12,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5596639492949453
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 13,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5392122382358394
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 14,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.773446485654063
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 15,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8667600158945201
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 16,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9133840857469506
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 17,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6714099622836754
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 18,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8059397487215805
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 19,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8928307757807115
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 20,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3167443515175271
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 21,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.580060942762028
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "G",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 22,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8590378096309317
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "G",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 23,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.3078176451804861
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "G",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 24,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.785754245933476
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 25,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5272779383060359
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 26,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5353251291164876
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 27,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6040846571771207
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 28,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.5444153744555057
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 29,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9723092163780687
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 30,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4393526500338679
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "G",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 31,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7733607954463422
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 32,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6010452752188713
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 33,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30423196246757467
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 34,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.30755014873738684
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 35,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8647111435671053
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 36,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4460854340592807
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 37,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9126957718635051
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 38,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.589995275784293
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "B",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 39,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.7057216963299837
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "G",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 40,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6228878872802324
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 41,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.448003856882335
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 42,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6505465631791741
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "E",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 43,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.33872588417935423
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 44,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.36044249981654874
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 45,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.9181342544561455
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 46,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.6467911514230822
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "B",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 47,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.324909319251297
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 48,
+    "pair": [
+      "G",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8082182212597153
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 49,
+    "pair": [
+      "D",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.8126930816627198
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "A",
+      "B"
+    ],
+    "selected_choice": "B",
+    "response": "B",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "A",
+      "C"
+    ],
+    "selected_choice": "C",
+    "response": "C",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "A",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "A",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "A",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "A",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "B",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "D",
+      "E"
+    ],
+    "selected_choice": "E",
+    "response": "E",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "D",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "D",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "E",
+      "F"
+    ],
+    "selected_choice": "F",
+    "response": "F",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "G",
+      "H"
+    ],
+    "selected_choice": "H",
+    "response": "H",
+    "temperature": 0.4952552575284878
+  },
+  {
+    "iteration": 50,
+    "pair": [
+      "H",
+      "I"
+    ],
+    "selected_choice": "I",
+    "response": "I",
+    "temperature": 0.4952552575284878
+  }
+]
