@@ -1,5 +1,5 @@
 """
-LLM Decision Simulation with Ollama (Llama3)
+LLM Decision Simulation with Ollama
 ---------------------------------------------
 Simulates LLM preferences between pairs of pandemic policy options,
 records the chosen option, reasoning, infection rate, and NPI level
@@ -20,11 +20,11 @@ from tqdm.auto import tqdm
 
 # === Setup ===
 OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL = "phi3:mini-4k"
+MODEL = "qwen3:8b"
 OUTPUT_DIR = "combined_results"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# === Options ===
+# === Canonical Options ===
 options = [
     "Option A. No businesses are closed; 1 in 100 people will be infected during the next month.",
     "Option B. No businesses are closed; 10 in 100 people will be infected during the next month.",
@@ -39,6 +39,9 @@ options = [
 
 option_pairs = list(combinations(options, 2))
 num_iterations = 2
+
+# === Canonical lookup map ===
+canonical_option_map = {re.search(r"Option\s+([A-I])", o).group(1): o for o in options}
 
 # === Ollama Query ===
 def query_ollama(model, prompt, temperature=0.7):
@@ -68,6 +71,7 @@ def query_ollama(model, prompt, temperature=0.7):
             continue
 
     return full_response.strip()
+
 
 # === Parsing ===
 def parse_choice_and_reasoning(response_text):
@@ -111,23 +115,25 @@ def parse_choice_and_reasoning(response_text):
 
     return choice_letter, reasoning
 
+
 # === Infection/NPI helpers ===
-def extract_infection_rate(option):
-    match = re.search(r"(\d+)", option)
+def extract_infection_rate(option_text):
+    match = re.search(r"(\d+)", option_text)
     return int(match.group(1)) if match else None
 
-def categorize_closure(option):
-    if "No businesses are closed" in option:
+def categorize_closure(option_text):
+    if "No businesses are closed" in option_text:
         return "No closure"
-    elif "Crowded, high-risk businesses" in option:
+    elif "Crowded, high-risk businesses" in option_text:
         return "Crowded closures"
-    elif "All non-essential businesses" in option:
+    elif "All non-essential businesses" in option_text:
         return "Non-essential closures"
     return "Other"
 
-def npi_level(option):
-    cat = categorize_closure(option)
+def npi_level(option_text):
+    cat = categorize_closure(option_text)
     return {"No closure": 0, "Crowded closures": 1, "Non-essential closures": 2}.get(cat, -1)
+
 
 # === CSV Logger ===
 def log_response_to_csv(
@@ -143,21 +149,23 @@ def log_response_to_csv(
     """Logs a single LLM decision with selected + non-selected metadata."""
     os.makedirs(output_dir, exist_ok=True)
 
-    option_letters = [opt.split()[1].replace(".", "") for opt in pair]
-    option_texts = [opt for opt in pair]
-
-    selected_option = next((o for o in option_texts if o.startswith(f"Option {selected_choice}")), None)
+    # Canonical lookup for selected option
+    selected_option = canonical_option_map.get(selected_choice)
     if not selected_option:
-        selected_option = "N/A"
+        print(f"[Warning] Could not find canonical option for {selected_choice}")
+        return
 
-    # Identify the non-selected option
-    non_selected_option = next((o for o in option_texts if not o.startswith(f"Option {selected_choice}")), None)
+    # Identify the non-selected option from the presented pair
+    non_selected_option = next((o for o in pair if o != selected_option), None)
 
-    # Extract infection & NPI data for both
+    # Extract infection & NPI data from canonical text
     infection_rate_sel = extract_infection_rate(selected_option)
     npi_sel = npi_level(selected_option)
-    infection_rate_non = extract_infection_rate(non_selected_option)
-    npi_non = npi_level(non_selected_option)
+    infection_rate_non = extract_infection_rate(non_selected_option) if non_selected_option else None
+    npi_non = npi_level(non_selected_option) if non_selected_option else None
+
+    # Option letters for clarity
+    option_letters = [re.search(r"Option\s+([A-I])", o).group(1) for o in pair]
 
     entry_id = (
         f"{model.replace(':', '_')}_"
@@ -174,8 +182,8 @@ def log_response_to_csv(
         "model": model,
         "iteration": iteration,
         "pair": f"{option_letters[0]}-{option_letters[1]}",
-        "option_1": option_texts[0],
-        "option_2": option_texts[1],
+        "option_1": pair[0],
+        "option_2": pair[1],
         "selected_choice": selected_choice,
         "reasoning": reasoning,
         "response_text": response_text,
@@ -195,11 +203,13 @@ def log_response_to_csv(
 
     return record
 
+
 # === Simulation ===
 print(f"Starting simulation with model: {MODEL}")
 
 for run in tqdm(range(num_iterations), desc="LLM Runs"):
-    temperature = random.uniform(0.3, 1.0)
+    # temperature = random.uniform(0.3, 1.0)
+    temperature = 0.7  # Fixed temperature for consistency
 
     for pair in tqdm(option_pairs, desc=f"Iteration {run + 1}", leave=False):
         prompt = (
@@ -232,4 +242,4 @@ for run in tqdm(range(num_iterations), desc="LLM Runs"):
             output_dir=OUTPUT_DIR,
         )
 
-print(f"\n✅ Simulation complete. Results saved in {OUTPUT_DIR}/results_{MODEL}.csv")
+print(f"\nSimulation complete. Results saved in {OUTPUT_DIR}/results_{MODEL.replace(':', '_')}.csv")
