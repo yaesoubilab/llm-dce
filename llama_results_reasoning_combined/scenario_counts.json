@@ -1,0 +1,38 @@
+{
+  "Option A. No businesses are closed; 1 in 100 people will be infected during the next month.": {
+    "selected": 53,
+    "not_selected": 147
+  },
+  "Option B. No businesses are closed; 10 in 100 people will be infected during the next month.": {
+    "selected": 4,
+    "not_selected": 175
+  },
+  "Option C. No businesses are closed; 20 in 100 people will be infected during the next month.": {
+    "selected": 0,
+    "not_selected": 179
+  },
+  "Option D. Crowded, high-risk businesses (such as clubs, theaters, and large sports venues) are closed; 1 in 100 people will be infected during the next month.": {
+    "selected": 173,
+    "not_selected": 27
+  },
+  "Option E. Crowded, high-risk businesses (such as clubs, theaters, and large sports venues) are closed; 10 in 100 people will be infected during the next month.": {
+    "selected": 128,
+    "not_selected": 72
+  },
+  "Option F. Crowded, high-risk businesses (such as clubs, theaters, and large sports venues) are closed; 20 in 100 people will be infected during the next month.": {
+    "selected": 75,
+    "not_selected": 125
+  },
+  "Option G. All non-essential businesses (such as clubs, theaters, restaurants, bars, and gyms) are closed; 1 in 100 people will be infected during the next month.": {
+    "selected": 199,
+    "not_selected": 1
+  },
+  "Option H. All non-essential businesses (such as clubs, theaters, restaurants, bars, and gyms) are closed; 10 in 100 people will be infected during the next month.": {
+    "selected": 150,
+    "not_selected": 50
+  },
+  "Option I. All non-essential businesses (such as clubs, theaters, restaurants, bars, and gyms) are closed; 20 in 100 people will be infected during the next month.": {
+    "selected": 97,
+    "not_selected": 103
+  }
+}

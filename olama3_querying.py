@@ -127,16 +127,25 @@ print(f"Starting simulation: {num_iterations} iterations")
 for run in tqdm(range(num_iterations), desc="LLM Runs"):
     temperature = random.uniform(0.3, 1.0)
     for pair in tqdm(option_pairs, desc=f"Iteration {run+1}", leave=False):
-        prompt = (
-            #"I am an official public health decisionmaker in charge of controlling the spread of SARS-CoV-2 in my county. "
-            #"I need to select between the following two scenarios. If it were up to you, which one would you have chosen?\n\n"
+        prompt_pub_health = (
+            "Put yourself back to a time when COVID-19 was spreading in your county and no vaccine was available.  "
+            "I am an official public health decisionmaker in charge of controlling the spread of SARS-CoV-2 in my county. "
+            "I need to select between the following two scenarios. If it were up to you, which one would you have chosen?\n\n"
+            "Select ONE option strictly by stating only its letter (A–I). No explanations, just the letter. Which do you choose?\n\n"
+            + "\n".join(pair)
+        )
+
+        prompt_general = (
+            "Put yourself back to a time when COVID-19 was spreading in your county and no vaccine was available.  "
+            "Your county’s public health officials are considering different options for reducing the spread of COVID-19 over the next month. "
+            "Of the options shown, which of the following would you choose?\n\n"
             "Select ONE option strictly by stating only its letter (A–I). No explanations, just the letter. Which do you choose?\n\n"
             + "\n".join(pair)
         )
 
         selected_choice = None
         for _ in range(3):
-            response = query_ollama(MODEL, prompt, temperature)
+            response = query_ollama(MODEL, prompt_general, temperature)
             choice = extract_valid_choice(response)
             if choice:
                 selected_choice = choice
