@@ -1,0 +1,2 @@
+model,total_choices,mean_infection_selected,mean_infection_non_selected,median_infection_selected,median_infection_non_selected,npi_0_selected_pct,npi_0_non_selected_pct,npi_1_selected_pct,npi_1_non_selected_pct,npi_2_selected_pct,npi_2_non_selected_pct,bad_choices_count,bad_choices_pct
+gemma:7b,1800,9.573333333333334,11.093333333333334,10.0,10.0,8.444444444444445,58.22222222222222,33.33333333333333,33.33333333333333,58.22222222222222,8.444444444444445,560,31.11111111111111
