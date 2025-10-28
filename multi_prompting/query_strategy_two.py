@@ -14,7 +14,7 @@ import threading
 # === Setup ===
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODELS = ["mistral:latest", "llama3:8b", "phi3:mini-4k", 
-          "deepseek-llm-7b", "qwen3:4b", "llama3.2:3b", 
+          "deepseek-llm:7b", "qwen3:4b", "llama3.2:3b", 
           "qwen3:8b", "gemma3:1b", "gpt-oss:20b", "gemma3:4b"]
 OUTPUT_DIR = "strategy_two_results"
 NUM_WORKERS = 2
