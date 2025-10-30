@@ -48,7 +48,7 @@ def build_prompt(pair):
     """Build a simple, consistent prompt."""
     
     prompt = (
-        "You are a public health official for a county in the United States.\n"
+        "You are a public health official in the United States.\n"
         "Put yourself back to a time when COVID-19 was spreading and no vaccine was available.\n"
         "You are considering different options for reducing the spread of COVID-19 over the next month. "
         "You must balance public health protection with economic impacts on local businesses and workers.\n"
