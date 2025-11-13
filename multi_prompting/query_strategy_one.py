@@ -10,12 +10,16 @@ from tqdm.auto import tqdm
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 
+
+
 # === Setup ===
 OLLAMA_URL = "http://localhost:11434/api/generate"
 ALL_MODELS = ["mistral:latest", "llama3:8b", "phi3:mini-4k", "phi4-mini:latest",
           "deepseek-llm:7b", "qwen3:4b", "llama3.2:3b", 
           "qwen3:8b", "gemma3:1b", "gpt-oss:20b", "gemma3:4b"]  # Add or modify models here
-MODELS = ["phi4-mini:latest"]
+MODELS = ["mistral:latest", "llama3:8b", "phi3:mini-4k", 
+          "deepseek-llm:7b", "llama3.2:3b", "phi4-mini:latest",
+          "gemma3:1b", "gpt-oss:20b", "gemma3:4b"] # Subset of models to use
 OUTPUT_DIR = "strategy_one_results"
 NUM_WORKERS = 2
 TEMPERATURE = 0.1
@@ -23,6 +27,8 @@ TEMPERATURE = 0.1
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 csv_lock = threading.Lock()
+
+
 
 # === Canonical Options ===
 options = [
@@ -38,23 +44,31 @@ options = [
 ]
 
 
-option_pairs = list(combinations(options, 2))
+# Generate pairs in both orders
+base_option_pairs = list(combinations(options, 2))
+option_pairs = []
+for pair in base_option_pairs:
+    option_pairs.append(pair)  # Original order (A, B)
+    option_pairs.append((pair[1], pair[0]))  # Reversed order (B, A)
+
+
 canonical_option_map = {re.search(r"Option\s+([A-I])", o).group(1): o for o in options}
 
 
 
 # === Prompt Builder ===
 def build_prompt(pair):
-    """Build a simple, consistent prompt."""
+    """Build a simple, consistent prompt with new framing."""
     
     prompt = (
-        "You are a public health official in the United States.\n"
-        "Put yourself back to a time when COVID-19 was spreading and no vaccine was available.\n"
-        "You are considering different options for reducing the spread of COVID-19 over the next month. "
-        "You must balance public health protection with economic impacts on local businesses and workers.\n"
-        "Of the options shown, which would you choose?\n\n"
+        "I am a public health official for a county in the United States. "
+        "A novel viral pathogen (similar to H1N1 and SARS-CoV-2) is spreading in my jurisdiction. "
+        "Among those who get infected, 5% would become so sick that they require hospitalization. "
+        "We are considering closing non-essential businesses to reduce the spread of the pathogen over the next month. "
+        "Our goal is to balance the public health benefits and the economic costs on local businesses and workers. "
+        "Given this objective, which of the following two options would you choose?\n\n"
         "Please reply with only the option letter (A–I) that you would choose.\n\n"
-        "Options:\n" + "\n".join(pair)
+        + "\n".join(pair)
     )
     
     return prompt
@@ -217,7 +231,8 @@ def process_pair(args):
 def run_simulation():
     print(f"Starting simulation with models: {', '.join(MODELS)}")
     print(f"Using {NUM_WORKERS} workers")
-    print(f"Option pairs: {len(option_pairs)}")
+    print(f"Base option pairs: {len(base_option_pairs)}")
+    print(f"Total option pairs (with reversals): {len(option_pairs)}")
 
 
     tasks = [(model, pair) for model in MODELS for pair in option_pairs]

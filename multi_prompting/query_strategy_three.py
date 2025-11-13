@@ -12,16 +12,20 @@ import threading
 
 
 
+
 # === Setup ===
 OLLAMA_URL = "http://localhost:11434/api/generate"
 ALL_MODELS = ["mistral:latest", "llama3:8b", "phi3:mini-4k", "phi4-mini:latest",
           "deepseek-llm:7b", "qwen3:4b", "llama3.2:3b", 
           "qwen3:8b", "gemma3:1b", "gpt-oss:20b", "gemma3:4b"]
-MODELS = ["qwen3:4b", "qwen3:8b", "gpt-oss:20b"] 
-# Tracking testing so far: phi3:mini-4k, gemma3:1b, gemma3:4b, llama3.2:3b, phi4-mini:latest, deepseek-llm:7b, llama3:8b, mistral:latest, qwen3:4b, qwen3:8b, gpt-oss:20b
+MODELS = ["llama3:8b", "phi3:mini-4k", 
+          "deepseek-llm:7b", "llama3.2:3b", "phi4-mini:latest",
+          "gemma3:1b", "gemma3:4b"]
+MODELS = ["mistral:latest", "gpt-oss:20b"]
 OUTPUT_DIR = "strategy_three_results"
 NUM_WORKERS = 2
 TEMPERATURE = 0.1
+
 
 
 
@@ -30,22 +34,17 @@ csv_lock = threading.Lock()
 
 
 
+
 # === Context Variations ===
-COUNTY_TYPES = ["rural", "urban", "suburban"]
-STATES = ["California", "Texas", "Florida", "New York"]
-CAPACITY_CONTEXTS = [None, "Local hospitals are at 50% capacity", "Local hospitals are at 90% capacity"]
+CAPACITY_CONTEXTS = ["Local hospitals are at 50% capacity", "Local hospitals are at 90% capacity", "Local hospitals are at 100% capacity"]
 
-
-# Generate all combinations of county type, state, and capacity
+# Generate contexts with only capacity variation
 PROMPT_CONTEXTS = []
-for county_type in COUNTY_TYPES:
-    for state in STATES:
-        for capacity in CAPACITY_CONTEXTS:
-            PROMPT_CONTEXTS.append({
-                "county_type": county_type,
-                "state": state,
-                "capacity_context": capacity,
-            })
+for capacity in CAPACITY_CONTEXTS:
+    PROMPT_CONTEXTS.append({
+        "capacity_context": capacity,
+    })
+
 
 
 
@@ -63,37 +62,46 @@ options = [
 ]
 
 
+# Generate pairs in both orders
+base_option_pairs = list(combinations(options, 2))
+option_pairs = []
+for pair in base_option_pairs:
+    option_pairs.append(pair)  # Original order (A, B)
+    option_pairs.append((pair[1], pair[0]))  # Reversed order (B, A)
 
-option_pairs = list(combinations(options, 2))
+
 canonical_option_map = {re.search(r"Option\s+([A-I])", o).group(1): o for o in options}
+
 
 
 
 # === Prompt Builder ===
 def build_prompt(context, pair):
-    """Build a prompt with county type, state, and capacity variations."""
+    """Build a prompt with capacity variations using new framing."""
     
     # Base prompt
     prompt_parts = [
-        f"You are a public health official for a {context['county_type']} county in {context['state']}.",
-        "Put yourself back to a time when COVID-19 was spreading and no vaccine was available."
+        "I am a public health official for a county in the United States.",
+        "A novel viral pathogen (similar to H1N1 and SARS-CoV-2) is spreading in my jurisdiction.",
+        "Among those who get infected, 5% would become so sick that they require hospitalization."
     ]
     
     # Add capacity context if specified
     if context['capacity_context']:
-        prompt_parts.append(f"{context['capacity_context']}.")
+        prompt_parts.append(context['capacity_context'] + ".")
     
     # Continue with rest of prompt
     prompt_parts.extend([
-        "You are considering different options for reducing the spread of COVID-19 over the next month. "
-        "You must balance public health protection with economic impacts on local businesses and workers.",
-        "Of the options shown, which would you choose?\n",
+        "We are considering closing non-essential businesses to reduce the spread of the pathogen over the next month.",
+        "Our goal is to balance the public health benefits and the economic costs on local businesses and workers.",
+        "Given this objective, which of the following two options would you choose?\n",
         "Please reply with only the option letter (A–I) that you would choose.\n",
-        "Options:\n" + "\n".join(pair)
+        "\n".join(pair)
     ])
     
     prompt = "\n".join(prompt_parts)
     return prompt
+
 
 
 
@@ -113,6 +121,7 @@ def query_ollama(model, prompt, temperature=0.1):
         return ""
 
 
+
     full_response = ""
     for line in response.iter_lines():
         if not line:
@@ -124,6 +133,7 @@ def query_ollama(model, prompt, temperature=0.1):
         except json.JSONDecodeError:
             continue
     return full_response.strip()
+
 
 
 
@@ -154,10 +164,12 @@ def parse_choice(response_text):
 
 
 
+
 # === Infection/NPI helpers ===
 def extract_infection_rate(option_text):
     match = re.search(r"(\d+)", option_text)
     return int(match.group(1)) if match else None
+
 
 
 
@@ -172,9 +184,11 @@ def categorize_closure(option_text):
 
 
 
+
 def npi_level(option_text):
     cat = categorize_closure(option_text)
     return {"No closure": 0, "Crowded closures": 1, "Non-essential closures": 2}.get(cat, -1)
+
 
 
 
@@ -187,6 +201,7 @@ def log_response_to_csv(model, context, pair, selected_choice, response_text, ou
         return
 
 
+
     non_selected_option = next((o for o in pair if o != selected_option), None)
     infection_rate_sel = extract_infection_rate(selected_option)
     npi_sel = npi_level(selected_option)
@@ -194,21 +209,22 @@ def log_response_to_csv(model, context, pair, selected_choice, response_text, ou
     npi_non = npi_level(non_selected_option) if non_selected_option else None
     option_letters = [re.search(r"Option\s+([A-I])", o).group(1) for o in pair]
 
+
     # Create capacity label for ID
     capacity_label = "NA" if context['capacity_context'] is None else context['capacity_context'].split()[3].replace('%', 'pct')
 
+
     entry_id = (
-        f"{model.replace(':', '_')}_{context['county_type']}_{context['state'].replace(' ', '')}_{capacity_label}_{option_letters[0]}_{option_letters[1]}_"
+        f"{model.replace(':', '_')}_{capacity_label}_{option_letters[0]}_{option_letters[1]}_"
         f"{datetime.utcnow().strftime('%Y%m%dT%H%M%S')}_{uuid.uuid4().hex[:8]}"
     )
+
 
 
     record = {
         "id": entry_id,
         "timestamp": datetime.utcnow().isoformat(),
         "model": model,
-        "county_type": context["county_type"],
-        "state": context["state"],
         "capacity_context": context["capacity_context"] if context["capacity_context"] else "N/A",
         "pair": f"{option_letters[0]}-{option_letters[1]}",
         "option_1": pair[0],
@@ -223,6 +239,7 @@ def log_response_to_csv(model, context, pair, selected_choice, response_text, ou
     }
 
 
+
     csv_path = os.path.join(output_dir, f"results_{model.replace(':', '_')}.csv")
     with csv_lock:
         df = pd.DataFrame([record])
@@ -230,6 +247,7 @@ def log_response_to_csv(model, context, pair, selected_choice, response_text, ou
             df.to_csv(csv_path, index=False)
         else:
             df.to_csv(csv_path, mode="a", index=False, header=False)
+
 
 
 
@@ -249,8 +267,10 @@ def process_pair(args):
         return False
 
 
+
     log_response_to_csv(model, context, pair, choice_letter, response, OUTPUT_DIR)
     return True
+
 
 
 
@@ -258,12 +278,15 @@ def process_pair(args):
 def run_simulation():
     print(f"Starting simulation with models: {', '.join(MODELS)}")
     print(f"Using {NUM_WORKERS} workers")
-    print(f"Prompt contexts: {len(PROMPT_CONTEXTS)}")
-    print(f"Option pairs: {len(option_pairs)}")
+    print(f"Prompt contexts (capacity variations): {len(PROMPT_CONTEXTS)}")
+    print(f"Base option pairs: {len(base_option_pairs)}")
+    print(f"Total option pairs (with reversals): {len(option_pairs)}")
+
 
 
     tasks = [(model, context, pair) for model in MODELS for context in PROMPT_CONTEXTS for pair in option_pairs]
     print(f"Total tasks: {len(tasks)}")
+
 
 
     successful, failed = 0, 0
@@ -284,11 +307,13 @@ def run_simulation():
                     pbar.update(1)
 
 
+
     print(f"\nSimulation complete!")
     print(f"Successful: {successful}, Failed: {failed}")
     print(f"Results saved in {OUTPUT_DIR}/")
     for model in MODELS:
         print(f"  - results_{model.replace(':', '_')}.csv")
+
 
 
 
