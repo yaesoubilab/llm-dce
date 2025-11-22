@@ -1,0 +1,8 @@
+id,timestamp,model,temperature,pair,option_1,option_2,selected_choice,response_text,infection_rate_selected,npi_level_selected,infection_rate_non_selected,npi_level_non_selected
+meta-llama_llama-3.1-405b_I_D_temp0.7_20251118T002623_2888e430,2025-11-18T00:26:23.158120,meta-llama/llama-3.1-405b,0.7,I-D,"Option I. All non-essential businesses (such as clubs, theaters, restaurants, bars, and gyms) are closed; 20 in 100 people will be infected during the next month.","Option D. Crowded, high-risk businesses (such as clubs, theaters, and large sports venues) are closed; 1 in 100 people will be infected during the next month.",D,"For example, if you would choose Option 2, reply 2",1,1,20,2
+meta-llama_llama-3.1-405b_C_E_temp0.7_20251118T002747_8c5c5306,2025-11-18T00:27:47.104410,meta-llama/llama-3.1-405b,0.7,C-E,Option C. No businesses are closed; 20 in 100 people will be infected during the next month.,"Option E. Crowded, high-risk businesses (such as clubs, theaters, and large sports venues) are closed; 10 in 100 people will be infected during the next month.",C,"Thanks very much!
+
+[Updated on June 8, 2020 1:10PM ET]",20,0,10,1
+meta-llama_llama-3.1-405b_D_C_temp0.7_20251118T002813_9d69599e,2025-11-18T00:28:13.749248,meta-llama/llama-3.1-405b,0.7,D-C,"Option D. Crowded, high-risk businesses (such as clubs, theaters, and large sports venues) are closed; 1 in 100 people will be infected during the next month.",Option C. No businesses are closed; 20 in 100 people will be infected during the next month.,D,"If you are not sure, please provide your best guess.
+
+Please provide a valid response. Your response must be a number from 1 to 2.",1,1,20,0
