@@ -26,14 +26,14 @@ if not OPENROUTER_API_KEY:
 ALL_MODELS = ["x-ai/grok-4-fast", "google/gemini-2.5-flash", "deepseek/deepseek-chat-v3.1", 
               "openai/gpt-5-nano", "anthropic/claude-sonnet-4.5", "openai/gpt-5"]
 MODELS = ["deepseek/deepseek-chat-v3.1", "x-ai/grok-4-fast", "google/gemini-2.5-flash", "openai/gpt-5-nano"] 
-MODELS = ["anthropic/claude-haiku-4.5"]
+# MODELS = ["anthropic/claude-haiku-4.5"]
 OUTPUT_DIR = "strategy_three_results"
 MAX_CONCURRENT = 2
 TEMPERATURE = [0.1, 0.7]
 SEED = 42  # Added seed for reproducibility
 
 # Strategy 3: Economic context (percentage of population losing income)
-ECONOMIC_CONTEXTS = [10, 20, 30]  # Percentage of population experiencing loss of income
+ECONOMIC_CONTEXTS = [10, 30, 50]  # Percentage of population experiencing loss of income
 
 # Optional: Add your site URL and name for rankings on openrouter.ai
 SITE_URL = ""
