@@ -29,9 +29,8 @@ if not OPENROUTER_API_KEY:
 ALL_MODELS = ["x-ai/grok-4-fast", "google/gemini-2.5-flash", "deepseek/deepseek-chat-v3.1", 
               "openai/gpt-5-nano", "anthropic/claude-sonnet-4.5", "openai/gpt-5"]
 MODELS = ["x-ai/grok-4-fast", "google/gemini-2.5-flash", "deepseek/deepseek-chat-v3.1", "openai/gpt-5-nano"]
-MODELS = ["google/gemini-2.5-flash"]
 OUTPUT_DIR = "strategy_two_results"
-MAX_CONCURRENT = 15
+MAX_CONCURRENT = 5
 TEMPERATURE = [0.7]
 NUM_REPEATS = 5  # Number of times to repeat each query config
 SEED = 42  # Added seed for reproducibility

@@ -27,7 +27,6 @@ ALL_MODELS = ["google/gemini-2.5-flash", "google/gemini-2.5-pro", "google/gemini
               "z-ai/glm-4.6", 
               "moonshotai/kimi-k2-thinking"]
 MODELS = ["deepseek/deepseek-chat-v3.1", "openai/gpt-5-nano", "google/gemini-2.5-flash", "x-ai/grok-4-fast"]
-MODELS = ["openai/gpt-5-nano"]
 OUTPUT_DIR = "strategy_four_results"
 MAX_CONCURRENT = 10
 TEMPERATURE = [0.7]
