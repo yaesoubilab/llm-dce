@@ -27,15 +27,15 @@ ALL_MODELS = ["google/gemini-2.5-flash", "google/gemini-2.5-pro", "google/gemini
               "z-ai/glm-4.6", 
               "moonshotai/kimi-k2-thinking"]
 MODELS = ["deepseek/deepseek-chat-v3.1", "openai/gpt-5-nano", "google/gemini-2.5-flash", "x-ai/grok-4-fast"]
-MODELS = ["deepseek/deepseek-chat-v3.1"]
+MODELS = ["openai/gpt-5-nano"]
 OUTPUT_DIR = "strategy_four_results"
-MAX_CONCURRENT = 2
+MAX_CONCURRENT = 10
 TEMPERATURE = [0.7]
 NUM_REPEATS = 5  # Number of times to repeat each query
 SEED = 42  # Added seed for reproducibility
 
 # Strategy 4: User preference types
-#USER_PREFERENCE_TYPES = ["Minimize Infection", "Minimize NPI", "Maximize Infection", "Maximize NPI"]
+#USER_PREFERENCE_TYPES = ["Minimize Infection", "Minimize NPI", "Maximize Infection", "Maximize NPI"
 USER_PREFERENCE_TYPES = ["Minimize Infection", "Minimize NPI"]
 
 SITE_URL = ""
