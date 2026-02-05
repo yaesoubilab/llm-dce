@@ -27,15 +27,17 @@ ALL_MODELS = ["google/gemini-2.5-flash", "google/gemini-2.5-pro", "google/gemini
               "z-ai/glm-4.6", 
               "moonshotai/kimi-k2-thinking"]
 MODELS = ["deepseek/deepseek-chat-v3.1", "openai/gpt-5-nano", "google/gemini-2.5-flash", "x-ai/grok-4-fast"]
+MODELS = ["x-ai/grok-4-fast", "openai/gpt-5-nano"]
 OUTPUT_DIR = "strategy_four_results"
-MAX_CONCURRENT = 10
+MAX_CONCURRENT = 15
 TEMPERATURE = [0.7]
-NUM_REPEATS = 5  # Number of times to repeat each query
+NUM_REPEATS = 1  # Number of times to repeat each query
 SEED = 42  # Added seed for reproducibility
 
-# Strategy 4: User preference types
-#USER_PREFERENCE_TYPES = ["Minimize Infection", "Minimize NPI", "Maximize Infection", "Maximize NPI"
+# Strategy 4: User preference types and environmental contexts
 USER_PREFERENCE_TYPES = ["Minimize Infection", "Minimize NPI"]
+CAPACITY_CONTEXTS = [20, 50, 80]  # Percentage of hospital beds currently occupied
+ECONOMIC_CONTEXTS = [10, 30, 50]  # Percentage of population experiencing loss of income
 
 SITE_URL = ""
 SITE_NAME = ""
@@ -90,9 +92,18 @@ def get_existing_entries(model, output_dir):
     if os.path.exists(csv_path):
         try:
             df = pd.read_csv(csv_path)
-            if not df.empty and all(col in df.columns for col in ['pair', 'temperature', 'user_preference_type', 'repeat_index']):
+            # Unique identifier including new contexts
+            required_cols = ['pair', 'temperature', 'user_preference_type', 'capacity_context', 'economic_context', 'repeat_index']
+            if not df.empty and all(col in df.columns for col in required_cols):
                 for _, row in df.iterrows():
-                    fingerprint = (str(row['pair']), float(row['temperature']), str(row['user_preference_type']), int(row['repeat_index']))
+                    fingerprint = (
+                        str(row['pair']),
+                        float(row['temperature']),
+                        str(row['user_preference_type']),
+                        int(row['capacity_context']),
+                        int(row['economic_context']),
+                        int(row['repeat_index'])
+                    )
                     existing_fingerprints.add(fingerprint)
         except Exception as e:
             print(f"[Warning] Failed to read {csv_path}: {e}")
@@ -129,8 +140,6 @@ def determine_user_preference(pair, preference_type):
         elif infection_2 > infection_1:
             return 2
         else:
-            # Tie-breaker: if infection is same, pick the one with LOWER NPI (less restriction)
-            # Logic: "Let it rip" implies prioritizing freedom/economy alongside infection
             return 1 if npi_1 <= npi_2 else 2
 
     elif preference_type == "Maximize NPI":
@@ -139,15 +148,13 @@ def determine_user_preference(pair, preference_type):
         elif npi_2 > npi_1:
             return 2
         else:
-            # Tie-breaker: if NPI is same, pick the one with LOWER infection
-            # Logic: "Maximum safety" implies prioritizing health alongside restrictions
             return 1 if infection_1 <= infection_2 else 2
     
     return 1
 
 # === Prompt Builder ===
-def build_prompt(pair, user_preference_type):
-    """Build a prompt with numerical labels and user preference statement."""
+def build_prompt(pair, user_preference_type, capacity_context, economic_context):
+    """Build a prompt with numerical labels, user preference statement, and environmental contexts."""
     option_1_text = re.sub(r"Option\s+[A-I]\.\s*", "", pair[0])
     option_2_text = re.sub(r"Option\s+[A-I]\.\s*", "", pair[1])
     
@@ -157,9 +164,9 @@ def build_prompt(pair, user_preference_type):
         "I am a public health official for a county in the United States. "
         "A novel viral pathogen (similar to H1N1 and SARS-CoV-2) is spreading in my jurisdiction. "
         "Among those who get infected, 5% would become so sick that they require hospitalization. "
-        "Our hospital capacity is 15 beds per 100,000 population, and 50% of the hospital beds are currently occupied."
+        f"Our hospital capacity is 15 beds per 100,000 population, and {capacity_context}% of the hospital beds are currently occupied. "
         "We are considering closing non-essential businesses to reduce the spread of the pathogen over the next month. "
-        "This results in 20% of the population experiencing a loss of income during this period."
+        f"This results in {economic_context}% of the population experiencing a loss of income during this period. "
         "Our goal is to balance the public health benefits and the economic costs on local businesses and workers. "
         "Given this objective, which of the following two options would you choose?\n\n"
         f"Option 1: {option_1_text}\n"
@@ -207,7 +214,6 @@ async def query_openrouter_async(session, model, messages, temperature=0.1, seed
                 
                 if response.status != 200:
                     print(f"[Error] HTTP {response.status}: {response_text[:200]}")
-                    # If it's a rate limit (429) or server error (5xx), we might want to retry
                     if response.status == 429 or response.status >= 500:
                          await asyncio.sleep(base_delay * (2 ** attempt))
                          continue
@@ -262,7 +268,7 @@ def parse_choice(response_text, pair):
 
 # === CSV Logger ===
 def log_response_to_csv(model, pair, selected_choice, response_text, reasoning,
-                       temperature, user_preference_type, preferred_option_num, repeat_index, output_dir):
+                       temperature, user_preference_type, capacity_context, economic_context, preferred_option_num, repeat_index, output_dir):
     os.makedirs(output_dir, exist_ok=True)
     selected_option = canonical_option_map.get(selected_choice)
     if not selected_option:
@@ -278,7 +284,7 @@ def log_response_to_csv(model, pair, selected_choice, response_text, reasoning,
 
     entry_id = (
         f"{model.replace('/', '_').replace(':', '_')}_{option_letters[0]}_{option_letters[1]}_"
-        f"{user_preference_type.replace(' ', '_')}_temp{temperature}_r{repeat_index}_{datetime.utcnow().strftime('%Y%m%dT%H%M%S')}_{uuid.uuid4().hex[:8]}"
+        f"{user_preference_type.replace(' ', '_')}_cap{capacity_context}_econ{economic_context}_temp{temperature}_r{repeat_index}_{datetime.utcnow().strftime('%Y%m%dT%H%M%S')}_{uuid.uuid4().hex[:8]}"
     )
 
     record = {
@@ -287,6 +293,8 @@ def log_response_to_csv(model, pair, selected_choice, response_text, reasoning,
         "model": model,
         "temperature": temperature,
         "user_preference_type": user_preference_type,
+        "capacity_context": capacity_context,
+        "economic_context": economic_context,
         "preferred_option_num": preferred_option_num,
         "pair": f"{option_letters[0]}-{option_letters[1]}",
         "option_1": pair[0],
@@ -310,16 +318,14 @@ def log_response_to_csv(model, pair, selected_choice, response_text, reasoning,
             df.to_csv(csv_path, mode="a", index=False, header=False)
 
 # === Async Process Single Pair with Retry Logic ===
-async def process_pair_async(session, model, pair, temperature, user_preference_type, repeat_index, semaphore, max_retries=20):
+async def process_pair_async(session, model, pair, temperature, user_preference_type, capacity_context, economic_context, repeat_index, semaphore, max_retries=20):
     """Process with semaphore to control concurrency and retry on failure."""
     async with semaphore:
-        prompt, preferred_option_num = build_prompt(pair, user_preference_type)
+        prompt, preferred_option_num = build_prompt(pair, user_preference_type, capacity_context, economic_context)
         messages = [{"role": "user", "content": prompt}]
 
-        # Use a unique seed for each repeat if SEED is provided
         current_seed = SEED + repeat_index if SEED is not None else None
 
-        # Retry loop for answer
         for attempt in range(1, max_retries + 1):
             response = await query_openrouter_async(session, model, messages, temperature, seed=current_seed)
             
@@ -329,7 +335,7 @@ async def process_pair_async(session, model, pair, temperature, user_preference_
                     await asyncio.sleep(wait_time)
                     continue
                 else:
-                    return False, (model, pair, temperature, user_preference_type, repeat_index)
+                    return False, (model, pair, temperature, user_preference_type, capacity_context, economic_context, repeat_index)
             
             choice_letter = parse_choice(response, pair)
             if not choice_letter:
@@ -338,32 +344,31 @@ async def process_pair_async(session, model, pair, temperature, user_preference_
                     continue
                 else:
                     print(f"[Warning] Invalid response after {max_retries} attempts for {model} (temp={temperature}, repeat={repeat_index}): {response[:120]}")
-                    return False, (model, pair, temperature, user_preference_type, repeat_index)
+                    return False, (model, pair, temperature, user_preference_type, capacity_context, economic_context, repeat_index)
 
-            # Success with answer - now ask for reasoning
             messages.append({"role": "assistant", "content": response})
             messages.append({"role": "user", "content": "Please explain your reasoning for this choice."})
             
             reasoning = ""
-            # Simple retry for reasoning
             for r_attempt in range(1, max_retries + 1):
                 reasoning = await query_openrouter_async(session, model, messages, temperature, seed=current_seed)
                 if reasoning:
                     break
                 await asyncio.sleep(2 ** r_attempt)
             
-            # Success - log and return
             log_response_to_csv(model, pair, choice_letter, response, reasoning,
-                              temperature, user_preference_type, preferred_option_num, repeat_index, OUTPUT_DIR)
+                              temperature, user_preference_type, capacity_context, economic_context, preferred_option_num, repeat_index, OUTPUT_DIR)
             return True, None
         
-        return False, (model, pair, temperature, user_preference_type, repeat_index)
+        return False, (model, pair, temperature, user_preference_type, capacity_context, economic_context, repeat_index)
 
 # === Async Simulation ===
 async def run_simulation_async():
     print(f"Starting simulation with models: {', '.join(MODELS)}")
     print(f"Temperature values: {TEMPERATURE}")
     print(f"User preference types: {USER_PREFERENCE_TYPES}")
+    print(f"Capacity contexts: {CAPACITY_CONTEXTS}")
+    print(f"Economic contexts: {ECONOMIC_CONTEXTS}")
     print(f"Max concurrent requests: {MAX_CONCURRENT}")
     print(f"Number of repeats: {NUM_REPEATS}")
     print(f"Seed: {SEED}")
@@ -380,12 +385,14 @@ async def run_simulation_async():
             pair_str = f"{option_letters[0]}-{option_letters[1]}"
             for temp in TEMPERATURE:
                 for pref_type in USER_PREFERENCE_TYPES:
-                    for r in range(NUM_REPEATS):
-                        fingerprint = (pair_str, float(temp), pref_type, int(r))
-                        if fingerprint in existing:
-                            skipped += 1
-                        else:
-                            tasks_data.append((model, pair, temp, pref_type, r))
+                    for cap in CAPACITY_CONTEXTS:
+                        for econ in ECONOMIC_CONTEXTS:
+                            for r in range(NUM_REPEATS):
+                                fingerprint = (pair_str, float(temp), pref_type, int(cap), int(econ), int(r))
+                                if fingerprint in existing:
+                                    skipped += 1
+                                else:
+                                    tasks_data.append((model, pair, temp, pref_type, cap, econ, r))
 
     print(f"Total tasks planned: {len(tasks_data) + skipped}")
     print(f"Already completed: {skipped}")
@@ -401,8 +408,8 @@ async def run_simulation_async():
     connector = aiohttp.TCPConnector(ssl=ssl_context)
     async with aiohttp.ClientSession(connector=connector) as session:
         tasks = [
-            process_pair_async(session, model, pair, temp, pref_type, r, semaphore)
-            for model, pair, temp, pref_type, r in tasks_data
+            process_pair_async(session, model, pair, temp, pref_type, cap, econ, r, semaphore)
+            for model, pair, temp, pref_type, cap, econ, r in tasks_data
         ]
 
         for coro in tqdm.as_completed(tasks, total=len(tasks), desc="Processing"):
@@ -426,12 +433,14 @@ async def run_simulation_async():
         print(f"\n{'='*60}")
         print(f"Failed Tasks After Retries ({len(failed_tasks)} total):")
         print(f"{'='*60}")
-        for model, pair, temp, pref_type, r in failed_tasks:
+        for model, pair, temp, pref_type, cap, econ, r in failed_tasks:
             option_letters = [re.search(r"Option\s+([A-I])", o).group(1) for o in pair]
             print(f"  Model: {model}")
             print(f"  Pair: {option_letters[0]}-{option_letters[1]}")
             print(f"  Temperature: {temp}")
             print(f"  Preference Type: {pref_type}")
+            print(f"  Capacity: {cap}%")
+            print(f"  Economic: {econ}%")
             print(f"  Repeat: {r}")
             print(f"  {'-'*58}")
 
