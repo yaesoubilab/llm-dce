@@ -32,7 +32,7 @@ MODELS = ["x-ai/grok-4-fast", "google/gemini-2.5-flash", "deepseek/deepseek-chat
 OUTPUT_DIR = "strategy_two_results"
 MAX_CONCURRENT = 5
 TEMPERATURE = [0.7]
-NUM_REPEATS = 5  # Number of times to repeat each query config
+NUM_REPEATS = 1  # Number of times to repeat each query config
 SEED = 42  # Added seed for reproducibility
 
 

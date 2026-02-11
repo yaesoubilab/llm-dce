@@ -31,7 +31,7 @@ MODELS = ["deepseek/deepseek-chat-v3.1", "openai/gpt-5-nano", "google/gemini-2.5
 OUTPUT_DIR = "strategy_one_results"
 MAX_CONCURRENT = 3  # Control concurrent requests to respect rate limits
 TEMPERATURE = [0.7]  # List of temperatures to test
-NUM_REPEATS = 5  # Number of times to repeat each query
+NUM_REPEATS = 1  # Number of times to repeat each query
 SEED = 42  # Seed for reproducibility
 
 # Optional: Add your site URL and name for rankings on openrouter.ai
