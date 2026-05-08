@@ -35,7 +35,7 @@ NUM_REPEATS = 1  # Number of times to repeat each query
 SEED = 42  # Added seed for reproducibility
 
 # Strategy 4: User preference types and capacity contexts
-USER_PREFERENCE_TYPES = ["Minimize Infection", "Minimize NPI"]
+USER_PREFERENCE_TYPES = ["Minimize Infections", "Minimize Business Closure"]
 CAPACITY_CONTEXTS = [20, 50, 80]  # Percentage of hospital beds currently occupied
 
 SITE_URL = ""
@@ -66,20 +66,6 @@ def _build_scenarios():
     for y in INCOME_LOSS_LEVELS:
         for x in INFECTION_RATES:
             scenarios.append({
-                "label": f"CC_{y}_{x}",
-                "closure": 1,
-                "income_loss": y,
-                "infection": x,
-                "text": (
-                    f"Crowded, high-risk businesses (such as clubs, theaters, and "
-                    f"large sports venues) are closed, resulting in {y}% of the "
-                    f"population experiencing income loss; {x} out of 100 people "
-                    f"will be infected in the next month."
-                ),
-            })
-    for y in INCOME_LOSS_LEVELS:
-        for x in INFECTION_RATES:
-            scenarios.append({
                 "label": f"NE_{y}_{x}",
                 "closure": 2,
                 "income_loss": y,
@@ -97,7 +83,7 @@ def _build_scenarios():
 scenarios = _build_scenarios()
 scenarios_by_label = {s["label"]: s for s in scenarios}
 
-# Generate pairs in both orders (210 base -> 420 total)
+# Generate pairs in both orders (66 base -> 132 total; CC removed)
 base_pairs = list(combinations(scenarios, 2))
 option_pairs = []
 for pair in base_pairs:
@@ -151,52 +137,32 @@ def get_existing_entries(model, output_dir):
 def determine_user_preference(pair, preference_type):
     """Determine which option (1 or 2) matches the user preference type.
 
-    Tie-break order for each preference type:
-      Minimize Infection: lower infection -> higher NPI -> higher income loss -> Option 1
-      Minimize NPI:       lower NPI       -> higher infection -> higher income loss -> Option 1
-    The income-loss tie-break fires only when the primary and secondary dimensions
-    both tie, i.e. for same-closure-category pairs with matching infection rates
-    but differing income_loss levels. Higher income loss is recommended so the
-    anchor sentence conveys a non-trivial stance in those pairs.
+    Tie-break order for each preference type (prefer the *lower* value on each
+    dimension in the listed order; Option 1 wins any remaining full tie):
+
+      Minimize Infections:      lower infection  → lower income_loss → lower closure
+      Minimize Business Closure: lower closure   → lower income_loss → lower infection
     """
     inf1, inf2 = pair[0]["infection"], pair[1]["infection"]
     npi1, npi2 = pair[0]["closure"], pair[1]["closure"]
     il1, il2 = pair[0]["income_loss"], pair[1]["income_loss"]
 
-    if preference_type == "Minimize Infection":
-        if inf1 != inf2:
-            return 1 if inf1 < inf2 else 2
-        if npi1 != npi2:
-            return 1 if npi1 > npi2 else 2
-        if il1 != il2:
-            return 1 if il1 > il2 else 2
-        return 1
-
-    elif preference_type == "Minimize NPI":
-        if npi1 != npi2:
-            return 1 if npi1 < npi2 else 2
-        if inf1 != inf2:
-            return 1 if inf1 > inf2 else 2
-        if il1 != il2:
-            return 1 if il1 > il2 else 2
-        return 1
-
-    elif preference_type == "Maximize Infection":
-        if inf1 != inf2:
-            return 1 if inf1 > inf2 else 2
-        if npi1 != npi2:
-            return 1 if npi1 < npi2 else 2
-        if il1 != il2:
-            return 1 if il1 > il2 else 2
-        return 1
-
-    elif preference_type == "Maximize NPI":
-        if npi1 != npi2:
-            return 1 if npi1 > npi2 else 2
+    if preference_type == "Minimize Infections":
         if inf1 != inf2:
             return 1 if inf1 < inf2 else 2
         if il1 != il2:
-            return 1 if il1 > il2 else 2
+            return 1 if il1 < il2 else 2
+        if npi1 != npi2:
+            return 1 if npi1 < npi2 else 2
+        return 1
+
+    elif preference_type == "Minimize Business Closure":
+        if npi1 != npi2:
+            return 1 if npi1 < npi2 else 2
+        if il1 != il2:
+            return 1 if il1 < il2 else 2
+        if inf1 != inf2:
+            return 1 if inf1 < inf2 else 2
         return 1
 
     raise ValueError(f"Unknown preference type: {preference_type}")
@@ -312,7 +278,8 @@ def parse_concurrent_response(response_text):
     reasoning = reasoning_match.group(1).strip() if reasoning_match else ""
 
     if not reasoning:
-        print(f"[Warning] REASONING: section missing or empty — model may not have followed the format.")
+        print(f"[Warning] REASONING: section missing or empty — will retry.")
+        return "", None
 
     if response_match:
         return reasoning, int(response_match.group(1))
