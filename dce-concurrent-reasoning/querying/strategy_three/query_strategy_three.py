@@ -226,7 +226,8 @@ def parse_concurrent_response(response_text):
     reasoning = reasoning_match.group(1).strip() if reasoning_match else ""
 
     if not reasoning:
-        print(f"[Warning] REASONING: section missing or empty — model may not have followed the format.")
+        print(f"[Warning] REASONING: section missing or empty — will retry.")
+        return "", None
 
     if response_match:
         return reasoning, int(response_match.group(1))

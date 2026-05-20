@@ -371,6 +371,11 @@ async def process_pair_async(session, model, pair, temperature, capacity_context
                     break
                 await asyncio.sleep(2 ** r_attempt)
 
+            if not reasoning:
+                print(f"[Warning] Empty reasoning after {max_retries} attempts for {model} "
+                      f"(temp={temperature}, cap={capacity_context}%, repeat={repeat_index}) — skipping.")
+                return False, (model, pair, temperature, capacity_context, repeat_index)
+
             # Success - log and return
             log_response_to_csv(model, pair, selected_label, response, reasoning,
                                 temperature, capacity_context, repeat_index, OUTPUT_DIR)
