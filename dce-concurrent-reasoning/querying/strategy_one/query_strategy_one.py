@@ -11,10 +11,12 @@ from itertools import combinations
 from datetime import datetime
 from tqdm.asyncio import tqdm
 import threading
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # === Setup ===
-# OPENROUTER_API_KEY = os.getenv("LLM_DCE_KEY_1")
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"  # Full endpoint URL
 
 ALL_MODELS = ["google/gemini-2.5-flash", "google/gemini-2.5-pro", "google/gemini-2.5-flash-lite",
